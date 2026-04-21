@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "expodengageexample",
+    "slug": "expodengageexample",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "bundleIdentifier": "com.dengage.expodengageexample",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Location is used to detect geofence regions for Dengage campaigns.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Background location is used to evaluate geofences when the app is not open.",
+        "UIBackgroundModes": ["location", "remote-notification"]
+      }
+    },
+    "android": {
+      "package": "com.dengage.expodengageexample",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@dengage-tech/expo-dengage",
+        {
+          "androidFirebaseIntegrationKey": "YtPEpvwpighOnJArUIheeFtIA0pTQcFJzyqIPdvs7cjBYSUH4kZb5w_s_l_BXGByP_p_l_EqSTv4AwsYpWNz_s_l_b3VCwRhSkQUyQlQzjyCk8qox8sXtyvCsQMRozVQErjvCKTxLUcc02Jfodw4Nk7uCixW1Lw74Q_e_q__e_q_",
+          "androidHuaweiIntegrationKey": null,
+          "androidGeofenceEnabled": true,
+          "androidHmsEnabled": false,
+          "androidDeviceConfiguration": "Google",
+          "iosIntegrationKey": "T1B6RzcUfNtWTYP7niBXfepo1HXVU6yYl6oSJ1lYr2E58yenBHtN_s_l_KzCTsrFoD4K0GblmpDKENuNvTX_p_l_cXKji0ffYqiY3ZcOaWwz1wjBQYqS0Q9MQ89FGyuOKKBN6NIXcyt3qUr4ZyxmuOS_p_l_0pGdlw_e_q__e_q_",
+          "iosAppGroup": "group.com.dengage.expodengageexample.dengage",
+          "iosGeofenceEnabled": true,
+          "iosAskNotificationPermission": true,
+          "dengageEventApiUrl": "https://event.dengage.com",
+          "dengagePushApiUrl": "https://push.dengage.com",
+          "dengageDeviceIdApiUrl": "https://push.dengage.com",
+          "dengageInAppApiUrl": "https://push.dengage.com",
+          "dengageGeofenceApiUrl": "https://push.dengage.com/geoapi/",
+          "fetchRealTimeInAppApiUrl": "https://tr-inapp.lib.dengage.com/",
+          "logEnabled": true,
+          "androidDevelopmentStatusFromBuild": true,
+          "iosDevelopmentStatusFromBuild": true
+        }
+      ]
+    ]
+  }
+}
