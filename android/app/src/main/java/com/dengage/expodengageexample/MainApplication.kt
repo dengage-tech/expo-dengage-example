@@ -49,7 +49,6 @@ class MainApplication : Application(), ReactApplication {
     loadReactNative(this)
     ApplicationLifecycleDispatcher.onApplicationCreate(this)
 // @generated begin @dengage-tech/expo-dengage
-    DengageRNCoordinator.sharedInstance.injectReactInstanceManager(reactNativeHost.reactInstanceManager)
     DengageRNCoordinator.sharedInstance.setupDengage(
       firebaseIntegrationKey = "YtPEpvwpighOnJArUIheeFtIA0pTQcFJzyqIPdvs7cjBYSUH4kZb5w_s_l_BXGByP_p_l_EqSTv4AwsYpWNz_s_l_b3VCwRhSkQUyQlQzjyCk8qox8sXtyvCsQMRozVQErjvCKTxLUcc02Jfodw4Nk7uCixW1Lw74Q_e_q__e_q_",
       huaweiIntegrationKey = null,
